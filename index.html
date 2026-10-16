@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotografía Directa · Taller de Fotografía · Politécnico Grancolombiano</title>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/scenes.css">
+<link rel="stylesheet" href="assets/css/juego.css">
+<link rel="icon" href="assets/img/favicon.png">
+</head>
+<body>
+  <div id="stage">
+    <div id="under"></div>
+    <div id="scenes"></div>
+    <div id="fx"></div>
+    <div id="vignette"></div>
+    <canvas id="grain"></canvas>
+    <div id="cap"></div>
+    <div id="hud"></div>
+  </div>
+
+  <div id="ui"></div>
+  <audio id="mix" src="assets/audio/mezcla_video.mp3" preload="auto"></audio>
+
+  <div id="start">
+    <div class="box">
+      <div class="kick">Taller de Fotografía · Politécnico Grancolombiano</div>
+      <h1>Fotografía directa</h1>
+      <p>Mismo contenido y mismas animaciones del video. <b>Paso a paso</b>: sin voz, cada lámina se arma rápido (sin esperas en blanco) y tú decides cuándo pasar con la flecha →. <b>Como video</b>: narrado y con música, al ritmo original.</p>
+      <div class="btns">
+        <button class="b2">Presentar paso a paso &nbsp;→</button>
+        <button class="b1">▶&nbsp; Reproducir como video</button>
+      </div>
+      <div class="opts">
+        <label><input type="checkbox" id="optNarr"> Voz del narrador en modo paso a paso (ritmo de la voz, 1,15×)</label>
+        <label><input type="checkbox" id="optSfx" checked> Efectos de sonido</label>
+        <label><input type="checkbox" id="optCap" checked> Subtítulos</label>
+      </div>
+      <div class="keys">
+        <kbd>→</kbd> <kbd>Espacio</kbd> <kbd>Clic</kbd> siguiente &nbsp;·&nbsp; <kbd>←</kbd> <kbd>Clic derecho</kbd> anterior &nbsp;·&nbsp; <kbd>R</kbd> repetir escena<br>
+        <kbd>V</kbd> modo video &nbsp;·&nbsp; <kbd>N</kbd> narración &nbsp;·&nbsp; <kbd>C</kbd> subtítulos &nbsp;·&nbsp; <kbd>S</kbd> efectos &nbsp;·&nbsp; <kbd>F</kbd> pantalla completa &nbsp;·&nbsp; <kbd>H</kbd> ayuda
+      </div>
+    </div>
+  </div>
+  <div id="help">
+    <kbd>→</kbd>/<kbd>Espacio</kbd> siguiente &nbsp; <kbd>←</kbd> anterior<br>
+    <kbd>Inicio</kbd>/<kbd>Fin</kbd> primera / última<br>
+    <kbd>R</kbd> repetir la escena actual<br>
+    <kbd>V</kbd> reproducir como video (con voz)<br>
+    <kbd>N</kbd> voz del narrador on/off (sin voz: animaciones rápidas)<br>
+    <kbd>S</kbd> efectos de sonido on/off<br>
+    <kbd>C</kbd> subtítulos on/off<br>
+    <kbd>F</kbd> pantalla completa &nbsp; <kbd>H</kbd> esta ayuda
+  </div>
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/guion.js"></script>
+  <script src="assets/js/timing.js"></script>
+  <script src="assets/js/engine.js"></script>
+  <script src="assets/js/referencias.js"></script>
+  <script src="assets/js/imagenes.js"></script>
+  <script src="assets/js/lib_base.js"></script>
+  <script src="assets/js/lib_juego.js"></script>
+  <script src="assets/js/scenes_1.js"></script>
+  <script src="assets/js/scenes_2.js"></script>
+  <script src="assets/js/scenes_3.js"></script>
+  <script src="assets/js/scenes_4.js"></script>
+  <script src="assets/js/scenes_5.js"></script>
+  <script>FD.boot();</script>
+</body>
+</html>
